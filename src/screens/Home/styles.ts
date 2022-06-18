@@ -7,8 +7,9 @@ export const Container = styled.View`
 `;
 
 export const Title = styled.Text`
-    font-size: 20px;
+    font-size: 30px;
     color: black;
+    font-weight: bold;
 `;
 
 export const Header = styled.View`
@@ -17,4 +18,8 @@ export const Header = styled.View`
     display: flex;
     justify-content: space-between;
     margin: 10px 15px;
+`;
+
+export const Search = styled.View`
+    
 `;
