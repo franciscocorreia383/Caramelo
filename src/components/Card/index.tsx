@@ -1,5 +1,5 @@
 import { Text, View, Image } from "react-native";
-import { Title, Container, Info } from "./styles"
+import { Title, Container, Info, Donor } from "./styles"
 import { AntDesign } from "@expo/vector-icons"
 import { Avatar } from '../Avatar'
 
@@ -26,7 +26,7 @@ export function Card({ id, image, title, doador, star }: Props) {
             />
             <Info>
                 <Title>{title}</Title>
-                <Text>{doador}</Text>
+                <Donor>{doador}</Donor>
             </Info>
             <AntDesign
                 name="star"

@@ -5,12 +5,13 @@ export const Container = styled.View`
     flex-direction: row;
     display: flex;
     justify-content: space-between;
-    background-color: skyblue;
     border-radius: 10px;
     
     height: 100px;
     padding: 0px 10px;
     margin-top: 10px;
+
+    border: 2px solid #303134;
 `;
 
 export const Info = styled.View`
@@ -20,4 +21,9 @@ export const Info = styled.View`
 export const Title = styled.Text`
     font-weight: bold;
     font-size: 20px;
+    color: white;
+`;
+
+export const Donor = styled.Text`
+    color: white;
 `;

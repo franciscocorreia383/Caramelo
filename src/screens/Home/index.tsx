@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Container, Title, Header, Search } from './styles'
+import { Container, Title, Header, Search, Body, Description } from './styles'
 import { AntDesign } from '@expo/vector-icons'
+
 import { Card } from '../../components/Card'
 import { SearchBar } from 'react-native-elements';
 
@@ -18,7 +19,7 @@ export function Home() {
             id: 2,
             image: 'https://www.dci.com.br/wp-content/uploads/2020/09/1300x0_1568662224_5d7fe2d09bccd.jpeg',
             title: 'Caramelo',
-            doador: 'Lar São Lasaro',
+            doador: 'Lar São Lazaro',
             star: false,
         },
         {
@@ -46,7 +47,7 @@ export function Home() {
             setSearchName('search1')
         } else {
             setSearch(true);
-           
+
             setSearchName('close')
         }
     }
@@ -55,7 +56,7 @@ export function Home() {
         <Container>
             <Header>
                 <Title>Caramelo</Title>
-                <AntDesign.Button name={searchName} size={24} color="black" onPress={handleClickSearch}> Procurar </AntDesign.Button>
+                <AntDesign.Button name={searchName} size={20} color="white" style={{backgroundColor:'red'}} onPress={handleClickSearch}> Procurar </AntDesign.Button>
             </Header>
 
             <Search>
@@ -64,7 +65,7 @@ export function Home() {
                         ?
                         <SearchBar
                             placeholder="Search"
-                            lightTheme
+                            darkTheme
                             round
                             autoCorrect={false}
                         /> : null
