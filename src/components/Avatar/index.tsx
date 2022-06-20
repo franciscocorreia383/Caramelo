@@ -1,7 +1,7 @@
 import { Avatar as Image, Container } from "./styles"
 
 type Props = {
-    id: number
+    id?: number
     image: string
 }
 

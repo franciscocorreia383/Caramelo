@@ -1,17 +1,19 @@
 import styled from 'styled-components/native';
 
 export const Container = styled.View`
+    border-radius: 10px;
+    border: 1px solid #303134;
+`;
+
+export const CardView = styled.View`
     align-items: center;
     flex-direction: row;
     display: flex;
     justify-content: space-between;
-    border-radius: 10px;
-    
+
     height: 100px;
     padding: 0px 10px;
     margin-top: 10px;
-
-    border: 2px solid #303134;
 `;
 
 export const Info = styled.View`
@@ -27,3 +29,4 @@ export const Title = styled.Text`
 export const Donor = styled.Text`
     color: white;
 `;
+

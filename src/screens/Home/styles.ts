@@ -22,23 +22,6 @@ export const Header = styled.View`
     
 `;
 
-export const Search = styled.View`
-    
-`;
-
-export const Body = styled.View`
-    height: 30px;
-    justify-content: space-around;
-    display: flex;
-    flex-direction: row;
-    padding: 0px 5px;
-    border: 2px solid black;
-
-    
-`;
-
-export const Description = styled.Text`
-    font-size: 20px;
-    color: white;
-  
+export const Flat = styled.FlatList`
+    margin-bottom: 60px;
 `;
